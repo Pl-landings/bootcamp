@@ -1,0 +1,265 @@
+.reviews {
+  max-width: 1215px;
+  padding-bottom: 135px;
+  margin: auto;
+  overflow: visible;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews {
+    padding-bottom: 155px;
+  }
+}
+
+.reviews__title {
+  width: fit-content;
+  font-style: normal;
+  color: #3C4758;
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0 0 60px 27px;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__title {
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__title {
+    font-size: 25px;
+    line-height: 100%;
+    margin: auto auto 40px;
+  }
+}
+
+
+.reviews__list {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  min-height: 385px;
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
+.swiper.js-swiper {
+  overflow: visible;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__inner {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  
+  .swiper.js-swiper {
+    overflow: visible;
+    height: 410px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__inner {
+    margin: 0 10px;
+  }
+}
+
+
+.reviews__item {
+  list-style: none;
+}
+
+.reviews__item.swiper-slide {
+  width: 375px;
+  height: 385px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__item.swiper-slide {
+    flex: none;
+    width: 330px;
+    padding-top: 40px;
+    padding-left: 20px;
+    height: 410px;
+  }
+  
+  .reviews .swiper-pagination {
+    position: static;
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__item {
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+
+.reviews__item-header {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+
+@media screen and (max-width: 1260px) {
+  .reviews__item-header {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__header-row {
+  display: flex;
+  align-items: center;
+  margin: 0 0 11px;
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__header-row {
+    justify-content: space-between;
+  }
+}
+
+
+.reviews__avatar {
+  width: 66px;
+  height: 66px;
+  margin-right: 20px;
+  border-radius: 105px;
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__avatar {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 105px;
+  }
+}
+
+.reviews__name {
+  margin: 0;
+  width: fit-content;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+@media screen and (max-width: 750px) {
+  .reviews__name {
+    font-size: 16px;
+    line-height: 100%;
+    margin-right: auto;
+  }
+}
+
+
+.reviews__social-link {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.reviews__about {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #7543ED;
+  opacity: 0.8;
+  min-height: 60px;
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__about {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__item:first-child .reviews__text {
+  max-width: 310px;
+}
+
+.reviews__item:nth-child(2) .reviews__text {
+  max-width: 251px;
+}
+
+.reviews__item:nth-child(3) .reviews__text {
+  max-width: 280px;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__item:first-child .reviews__text {
+    max-width: 288px;
+  }
+  
+  .reviews__item:nth-child(2) .reviews__text {
+    max-width: 251px;
+  }
+  
+  .reviews__item:nth-child(3) .reviews__text {
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .reviews__item:first-child .reviews__text {
+    max-width: none;
+  }
+  
+  .reviews__item:nth-child(2) .reviews__text {
+    max-width: none;
+  }
+  
+  .reviews__item:nth-child(3) .reviews__text {
+    max-width: none;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #7A7070;
+}
+
+@media screen and (max-width: 1260px) {
+  .reviews__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+  background: #C5ADFF;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #4A37EE;
+}
