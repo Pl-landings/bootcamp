@@ -41,7 +41,7 @@
   top: 60px;
   right: -96px;
   margin: 0;
-  background-image: url(/img/bootcamp/partnersbg.svg);
+  background-image: url(./img/bootcamp/partnersbg.svg);
   background-position: 294px 1px;
   background-repeat: no-repeat;
   width: 1000px;
@@ -54,7 +54,7 @@
     right: 19px;
     bottom: 28px;
     background-position: 416px 36px;
-    background-image: url(/img/bootcamp/partnersbgmob.svg);
+    background-image: url(./img/bootcamp/partnersbgmob.svg);
   }
 }
 
