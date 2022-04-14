@@ -1,0 +1,52 @@
+.program {
+
+}
+.program__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  color: #3C4758;
+  margin: 0 0 70px;
+}
+.program__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program__tab-name {
+  padding: 21px 28px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3D3D3D;
+}
+
+.program__tab-name_active {
+  padding: 21px 28px;
+  background: linear-gradient(97.52deg, #6309BB 4.98%, #45CBD7 104.44%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  color: #FFF;
+}
+
+.program__slide {
+  display: flex;
+  justify-content: space-between;
+  
+  min-height: 660px;
+}
+.program__slide-text {
+  margin: 292px 0 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #7A7070;
+  max-width: 472px;
+}
+.program__slide-bg {
+  align-self: end;
+  width: 520px;
+  height: 445px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
