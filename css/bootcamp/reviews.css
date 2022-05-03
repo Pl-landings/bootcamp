@@ -1,6 +1,6 @@
 .reviews {
   max-width: 1215px;
-  padding-bottom: 135px;
+  padding-bottom: 172px;
   margin: auto;
   overflow: visible;
 }
@@ -11,20 +11,27 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .reviews {
+    padding-bottom: 45px;
+  }
+}
+
 .reviews__title {
   width: fit-content;
   font-style: normal;
   color: #3C4758;
   font-weight: 600;
-  font-size: 44px;
-  margin: 0 0 60px 27px;
+  font-size: 50px;
+  line-height: 100%;
+  margin: 0 0 103px 27px;
 }
 
 @media screen and (max-width: 1260px) {
   .reviews__title {
     font-size: 35px;
     line-height: 100%;
-    margin-bottom: 60px;
+    margin: 0 0 60px 66px;
   }
 }
 
@@ -44,9 +51,6 @@
   min-height: 385px;
 }
 
-@media screen and (max-width: 750px) {
-
-}
 
 .swiper.js-swiper {
   overflow: visible;
@@ -250,7 +254,7 @@
     line-height: 25px;
   }
 }
-.swiper-pagination .swiper-pagination-bullet {
+.feature-container .swiper-pagination .swiper-pagination-bullet {
   opacity: 1;
   width: 15px;
   height: 15px;
@@ -259,6 +263,11 @@
   background: #C5ADFF;
 }
 
+@media screen and (max-width: 750px) {
+  .feature-container .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 2px !important;
+  }
+}
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #4A37EE;

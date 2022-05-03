@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./css/bootcamp/index.css">
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="feature-container">
+    <header class="header">
+        <div class="container header__content">
+            <a href="#" class="header__logo">
+                <svg width="114" height="32" viewBox="0 0 114 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.8 7.2H31.44V24H35.28V18.72H37.8C41.112 18.72 43.68 16.152 43.68 12.96C43.68 9.768 41.112 7.2 37.8 7.2ZM37.8 15.12H35.28V10.8H37.8C38.976 10.8 39.84 11.736 39.84 12.96C39.84 14.184 38.976 15.12 37.8 15.12ZM44.5163 24H48.1163V6.48H44.5163V24ZM58.5026 12V13.128C57.7106 12.216 56.5346 11.664 54.9266 11.664C51.7826 11.664 49.1906 14.424 49.1906 18C49.1906 21.576 51.7826 24.336 54.9266 24.336C56.5346 24.336 57.7106 23.784 58.5026 22.872V24H62.1026V12H58.5026ZM55.6466 20.928C53.9906 20.928 52.7906 19.8 52.7906 18C52.7906 16.2 53.9906 15.072 55.6466 15.072C57.3026 15.072 58.5026 16.2 58.5026 18C58.5026 19.8 57.3026 20.928 55.6466 20.928ZM70.8157 15.456V12H68.3437V8.64L64.7437 9.72V12H62.8237V15.456H64.7437V19.704C64.7437 23.064 66.1117 24.48 70.8157 24V20.736C69.2317 20.832 68.3437 20.736 68.3437 19.704V15.456H70.8157ZM75.7284 14.136V12H72.1284V24H75.7284V18.576C75.7284 16.2 77.8404 15.6 79.3284 15.84V11.76C77.8164 11.76 76.2084 12.528 75.7284 14.136ZM87.8033 12V18.552C87.8033 20.256 86.8913 21.024 85.5713 21.024C84.4193 21.024 83.4833 20.328 83.4833 18.84V12H79.8833V19.368C79.8833 22.608 81.9473 24.336 84.3713 24.336C85.9553 24.336 87.1553 23.76 87.8033 22.872V24H91.4033V12H87.8033ZM106.523 11.664C104.819 11.664 103.715 12.288 103.043 13.248C102.371 12.24 101.315 11.664 99.8994 11.664C98.2914 11.664 97.2354 12.288 96.6834 13.104V12H93.0834V24H96.6834V17.232C96.6834 15.816 97.3554 14.976 98.5554 14.976C99.7074 14.976 100.283 15.744 100.283 16.944V24H103.883V17.232C103.883 15.816 104.555 14.976 105.755 14.976C106.907 14.976 107.483 15.744 107.483 16.944V24H111.083V16.632C111.083 13.632 109.283 11.664 106.523 11.664Z"
+                          fill="#393348"/>
+                    <rect y="4" width="24" height="24" rx="5.76" fill="#F22F63"/>
+                    <rect x="5.2793" y="16.48" width="6.72" height="4.8" rx="0.48" fill="white" fill-opacity="0.4"/>
+                    <rect x="8.64062" y="13.6" width="6.72" height="4.8" rx="0.48" fill="white" fill-opacity="0.6"/>
+                    <rect x="12" y="10.72" width="6.72" height="4.8" rx="0.48" fill="white"/>
+                </svg>
+            </a>
+            <nav class="header__nav">
+                <a href="#audience" class="header__link">Для кого курс</a>
+                <a href="#program" class="header__link">Что вас ждет на курсе</a>
+                <a href="#speaker" class="header__link">Спикер курса</a>
+                <a href="#education" class="header__link">Как проходит обучение</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+                <a href="" class="header__nav-btn">Начать обучение</a>
+            </nav>
+            <a href="" class="header__btn">Начать обучение</a>
+            <div class="header__menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
     <section class="banner container">
         <div class="banner__text-column">
             <h1 class="banner__title">
@@ -42,50 +65,53 @@
             </span>
             <div class="banner__shield">
                 <div class="banner__shield-title">Герман Гаврилов</div>
-                <div class="banner__shield-subtitle">основатель <span>Platrum</span></div>
+                <div class="banner__shield-subtitle">Ментор
+                    интенсива<span> - основатель Platrum, Roistat и Eggheads</span></div>
             </div>
         </div>
     </section>
-    <section class="features container">
-        <h2 class="features__title">
-            Курс систематизации бизнеса вобрал в&nbsp;себя весь
-            многолетний опыт спикера, как основателя IT-компаний.
-            В&nbsp;курсе приведены примеры внедрения методик управления
-            с&nbsp;помощью
-            инструментов Platrum, но&nbsp;они носят рекомендательный характер.
+    <section class="features">
+        <h2 class="features__heading container">
+            На интенсиве будет
         </h2>
-        <ul class="features__list">
-            <li class="features__item">
-                <span class="features__icon">
-                </span>
-                Работающие методики
-                для&nbsp;эффективного управления бизнесом
-            </li>
-            <li class="features__item">
-                <span class="features__icon"></span>
-                Бесплатный и&nbsp;бессрочный доступ
-                к&nbsp;контенту, который мы&nbsp;постоянно обновляем
-            </li>
-            <li class="features__item">
-                <span class="features__icon"></span>
-                Кейсы, типичные ошибки и&nbsp;опыт
-                компаний из&nbsp;разных областей
-            </li>
-            <li class="features__item">
-                <span class="features__icon"></span>
-                Примеры внедрения методик
-                на&nbsp;реальных инструментах
-            </li>
-        </ul>
+        <div class="features__main">
+            <p class="features__title">
+                Курс на&nbsp;основе практики,
+                <br>
+                а&nbsp;не&nbsp;теории из&nbsp;книжек
+            </p>
+            <ul class="features__list">
+                <li class="features__item">
+                    <span class="features__icon"></span>
+                    <div>
+                        Лучшие практики <span class="features__hidden">для</span> автоматизации управления<span
+                            class="features__hidden">, которые</span> помогут избавиться от&nbsp;операционки
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon"></span>
+                    Инструменты для быстрого обучения сотрудников без лишних затрат времени
+                </li>
+                <li class="features__item">
+                    <span class="features__icon"></span>
+                    Кейсы, типичные ошибки и&nbsp;опыт компаний
+                    из&nbsp;разных областей
+                </li>
+                <li class="features__item">
+                    <span class="features__icon"></span>
+                    Лучшие методы для измерения эффективности сотрудников
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="audience container">
-        <h2 class="audience__title">
+        <h2 id="audience" class="audience__title">
             Для кого этот курс
         </h2>
         <ul class="audience__list">
             <li class="audience__item">
-                <div class="audience__img" style="background-image: url(./img/bootcamp/audience1.png)"></div>
+                <div class="audience__img" style="background-image: url(./img/bootcamp/audience3.png)"></div>
                 <div class="audience__item-text-wrapper">
                     <h3 class="audience__item-title">Руководители</h3>
                     <p class="audience__item-text">Которые тратят время на&nbsp;операционку вместо стратегических
@@ -95,20 +121,13 @@
             <li class="audience__item">
                 <div class="audience__img" style="background-image: url(./img/bootcamp/audience2.png)"></div>
                 <div class="audience__item-text-wrapper">
-                    <h3 class="audience__item-title">Сотрудники</h3>
-                    <p class="audience__item-text">Которые хотят оптимизировать свое рабочее время</p>
-                </div>
-            </li>
-            <li class="audience__item">
-                <div class="audience__img" style="background-image: url(./img/bootcamp/audience3.png)"></div>
-                <div class="audience__item-text-wrapper">
                     <h3 class="audience__item-title">Владельцы&nbsp;бизнеса</h3>
                     <p class="audience__item-text">Которые не&nbsp;успевают контролировать все процессы
                         в&nbsp;бизнесе</p>
                 </div>
             </li>
             <li class="audience__item">
-                <div class="audience__img" style="background-image: url(./img/bootcamp/audience4.png)"></div>
+                <div class="audience__img" style="background-image: url(./img/bootcamp/audience1.png)"></div>
                 <div class="audience__item-text-wrapper">
                     <h3 class="audience__item-title"><span>HR</span>-директоры</h3>
                     <p class="audience__item-text">Которые выстраивают процесс обучения сотрудников в&nbsp;компании</p>
@@ -118,7 +137,7 @@
 
     </section>
     <section class="program container">
-        <h2 class="program__title">
+        <h2 id="program" class="program__title">
             Что вас ждет на курсе
         </h2>
         <nav class="program__tabs">
@@ -128,55 +147,125 @@
             <span class="program__tab-name">Планирование</span>
             <span class="program__tab-name">Безопасность и контроль</span>
         </nav>
-        <div class="program__slide">
-            <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program1.png)"></div>
-            <p class="program__slide-text">
-                Вы&nbsp;научитесь составлять структуру компании и&nbsp;разделять функции сотрудников
-                для масштабирования и&nbsp;систематизации бизнеса. Руководство, как сделать простые действия, чтобы бизнес
-                стал более системным
-            </p>
-        </div>
-        <div class="program__slide">
-            <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program2.png)"></div>
-            <p class="program__slide-text">
-                Вы&nbsp;узнаете, как правильно внедрить KPI и&nbsp;метрики, чтобы
-                сотрудники фокусировались на&nbsp;результате
-            </p>
-        </div>
-        <div class="program__slide">
-            <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program3.png)"></div>
-            <p class="program__slide-text">
-                Поделимся эффективными практиками обучения сотрудников
-                без лишних затрат времени. Вы&nbsp;узнаете, как написать регламенты, чтобы они работали
-            </p>
-        </div>
-        <div class="program__slide">
-            <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program4.png)"></div>
-            <p class="program__slide-text">
-                Поделимся опытом о&nbsp;том, как избавиться от&nbsp;операционки
-                и&nbsp;где найти время на&nbsp;стратегические задачи
-            </p>
-        </div>
-        <div class="program__slide">
-            <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program4.png)"></div>
-            <p class="program__slide-text">
-                Наглядно покажем инструменты для контроля финансов, имущества,
-                качества работы сотрудников. Расскажем, как надежно хранить пароли от&nbsp;вашего бизнеса
-            </p>
+        <div class="js-program-slider">
+            <div class="program__slider">
+                <div class="program__slide program__slide_active">
+                    <div class="program__slide-title">Построение структуры</div>
+                    <div class="program__slide-bg-wrapper">
+                        <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program1.png)"></div>
+                        <div class="program__slide-bg-shadow"></div>
+                    </div>
+                    <ul class="program__slide-list">
+                        <li class="program__slide-item">
+                            Вы научитесь составлять структуру компании
+                        </li>
+
+                        <li class="program__slide-item">
+                            Узнаете, как правильно разделять функции сотрудников
+                        </li>
+
+                        <li class="program__slide-item">
+                            Разберем частые ошибки внедрения оргструктуры
+                        </li>
+                    </ul>
+                </div>
+                <div class="program__slide">
+
+                    <div class="program__slide-title">Внедрение KPI</div>
+
+                    <div class="program__slide-bg-wrapper">
+                        <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program2.png)"></div>
+                    </div>
+                    <ul class="program__slide-list">
+                        <li class="program__slide-item">
+                            Вы узнаете, как сфокусировать сотрудников на результате
+                        </li>
+
+                        <li class="program__slide-item">
+                            Разберем, какие частые ошибки допускают при внедрении метрик
+                        </li>
+                    </ul>
+                </div>
+                <div class="program__slide">
+
+                    <div class="program__slide-title">Система обучения</div>
+
+                    <div class="program__slide-bg-wrapper">
+                        <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program3.png)"></div>
+                    </div>
+                    <ul class="program__slide-list">
+
+                        <li class="program__slide-item">
+                            Разберем эффективные практики обучения сотрудников без лишних затрат времени
+                        </li>
+
+                        <li class="program__slide-item">
+                            Вы узнаете, как написать регламенты, чтобы они работали
+                        </li>
+                        <li class="program__slide-item">
+                            Научитесь оцифровывать знания руками сотрудников
+                        </li>
+                    </ul>
+                </div>
+                <div class="program__slide">
+                    <div class="program__slide-title">Планирование</div>
+
+                    <div class="program__slide-bg-wrapper">
+                        <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program4.png)"></div>
+                    </div>
+                    <ul class="program__slide-list">
+                        <li class="program__slide-item">
+                            Поделюсь опытом, как избавиться от операционки
+                        </li>
+
+                        <li class="program__slide-item">
+                            Расскажу, где найти время на стратегические задачи
+                        </li>
+                        <li class="program__slide-item">
+                            Вы узнаете, какие инструменты помогут автоматизировать процессы управления
+                        </li>
+                    </ul>
+                </div>
+                <div class="program__slide">
+                    <div class="program__slide-title">Безопасность и контроль</div>
+
+                    <div class="program__slide-bg-wrapper">
+                        <div class="program__slide-bg" style="background-image: url(./img/bootcamp/program5.png)"></div>
+                    </div>
+                    <ul class="program__slide-list">
+                        <li class="program__slide-item">
+                            Поделюсь работающими инструментами для контроля финансов и имущества компании
+                        </li>
+
+                        <li class="program__slide-item">
+                            Вы узнаете, как минимизировать ошибки сотрудников и заставить их работать по регламентам
+                        </li>
+                        <li class="program__slide-item">
+                            Расскажу, как надежно хранить пароли от вашего бизнеса
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <a href="#" class="btn program__btn">Записаться на курс</a>
         </div>
     </section>
 
     <section class="speaker container">
-        <h2 class="speaker__title">
+        <h2 id="speaker" class="speaker__title">
             Спикер курса
         </h2>
+
         <ul class="speaker__list">
-            <li class="speaker__item">Эксперт в&nbsp;области аналитики, маркетинга и&nbsp;автоматизации
-                бизнес-процессов
+            <li class="speaker__item">
+                Герман Гаврилов&nbsp;&mdash;предприниматель,
+                который создает и&nbsp;развивает бизнесы более 10&nbsp;лет.
             </li>
-            <li class="speaker__item">Спикер более 100 крупнейших бизнес-конференций для&nbsp;предпринимателей</li>
-            <li class="speaker__item">Cооснователь и&nbsp;СЕО Roistat&nbsp;&mdash; системы сквозной аналитики,
-                и&nbsp;основатель Platrum&nbsp;&mdash; системы автоматизации менеджмента
+            <li class="speaker__item">
+                Основатель трех IT-компаний:
+                Roistat.com&nbsp;&mdash; маркетинговая платформа
+                Platrum.ru&nbsp;&mdash; сервис для автоматизации менеджмента
+                Eggheads.solutions&nbsp;&mdash; сервис аналитики маркетплейсов
             </li>
         </ul>
         <div class="speaker__image">
@@ -184,7 +273,7 @@
         </div>
         <div class="speaker__shield">
             <div class="speaker__shield-title">Герман Гаврилов</div>
-            <div class="speaker__shield-subtitle">Основатель Platrum и Roistat</div>
+            <div class="speaker__shield-subtitle">Соснователь Platrum, Roistat, Eggheads</div>
         </div>
     </section>
     <div class="advantages">
@@ -198,7 +287,7 @@
             <li class="advantages__item">
                 <span class="advantages__title">> 700</span>
                 <p class="advantages__text">
-                    сотрудников
+                    сотрудников работают в компаниях
                 </p>
             </li>
             <li class="advantages__item">
@@ -215,46 +304,30 @@
             </li>
         </ul>
     </div>
-    <section class="education container">
-        <h2 class="education__title">
-            Как проходит обучение
-        </h2>
-        <div class="education__steps">
-            <div class="education__item">
-                <span class="education__number">шаг 1</span>
-                <div>
-                    <h3 class="education__item-title">Изучите видео-уроки в порядке, представленном на платформе</h3>
-                    <p class="education__text">
-                        Видео-уроки уже находятся в личном кабинете
-                    </p>
-                </div>
-            </div>
-            <div class="education__item">
-                <span class="education__number">шаг 2</span>
-                <div>
-                    <h3 class="education__item-title">Проверьте свои знания после обучения</h3>
-                    <p class="education__text">
-                        Тесты и задания для отработки навыков
-                    </p>
-                </div>
-            </div>
-            <div class="education__item">
-                <span class="education__number">шаг 3</span>
-                <div>
-                    <h3 class="education__item-title">Сделайте свой бизнес системным</h3>
-                    <p class="education__text">
-                        Полученные знания и навыки подходят для любого бизнеса
-                    </p>
-                </div>
-            </div>
+    <section class="education">
+        <div class="container">
+            <h2 id="education" class="education__title">
+                Как проходит обучение
+            </h2>
+
+            <ul class="education__list">
+                <li class="education__item">
+                    Интенсив доступен онлайн в любое время
+                </li>
+                <li class="education__item">Можно проходить с командой</li>
+                <li class="education__item">Блоки с теорией и практикой</li>
+                <li class="education__item">Теория включает разбор ошибок, кейсов внедрения и лучших практик</li>
+                <li class="education__item">После каждого модуля есть тесты, чтобы проверить свои знания</li>
+            </ul>
         </div>
         <div class="education__bg"></div>
         <a href="#" class="btn education__btn">
             Начать обучение
         </a>
+
     </section>
     <section class="reviews">
-        <h2 class="reviews__title">Отзывы о курсе</h2>
+        <h2 id="reviews" class="reviews__title">Отзывы о курсе</h2>
         <div class="reviews__inner">
             <div class="js-swiper">
                 <ul class="reviews__list">
@@ -381,72 +454,49 @@
             </a>
         </div>
     </div>
-    <section class="about container">
-        <div class="about__column">
-            <h2 class="about__title">Platrum</h2>
-            <div class="about__icon">
-                <svg width="147" height="54" viewBox="0 0 147 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1.5" y="1.5" width="106" height="51" rx="25.5" stroke="url(#paint0_linear_2131_3641)"
-                          stroke-width="3"/>
-                    <g filter="url(#filter0_b_2131_3641)">
-                        <rect x="38" width="109" height="54" rx="27" fill="url(#paint1_linear_2131_3641)"/>
-                    </g>
-                    <defs>
-                        <filter id="filter0_b_2131_3641" x="34" y="-4" width="117" height="62"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2131_3641"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2131_3641"
-                                     result="shape"/>
-                        </filter>
-                        <linearGradient id="paint0_linear_2131_3641" x1="-11.9634" y1="4.99972" x2="-13.6574"
-                                        y2="72.5122" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#7543ED"/>
-                            <stop offset="1" stop-color="#45D6D6"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_2131_3641" x1="53.5" y1="3" x2="133" y2="54"
-                                        gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white"/>
-                            <stop offset="1" stop-color="#E6E6E6" stop-opacity="0.42"/>
-                        </linearGradient>
-                    </defs>
+    <footer class="footer container">
+        <div class="footer__inner">
+            <a href="" class="footer__logo">
+                <svg width="114" height="32" viewBox="0 0 114 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.8 7.2H31.44V24H35.28V18.72H37.8C41.112 18.72 43.68 16.152 43.68 12.96C43.68 9.768 41.112 7.2 37.8 7.2ZM37.8 15.12H35.28V10.8H37.8C38.976 10.8 39.84 11.736 39.84 12.96C39.84 14.184 38.976 15.12 37.8 15.12ZM44.5163 24H48.1163V6.48H44.5163V24ZM58.5026 12V13.128C57.7106 12.216 56.5346 11.664 54.9266 11.664C51.7826 11.664 49.1906 14.424 49.1906 18C49.1906 21.576 51.7826 24.336 54.9266 24.336C56.5346 24.336 57.7106 23.784 58.5026 22.872V24H62.1026V12H58.5026ZM55.6466 20.928C53.9906 20.928 52.7906 19.8 52.7906 18C52.7906 16.2 53.9906 15.072 55.6466 15.072C57.3026 15.072 58.5026 16.2 58.5026 18C58.5026 19.8 57.3026 20.928 55.6466 20.928ZM70.8157 15.456V12H68.3437V8.64L64.7437 9.72V12H62.8237V15.456H64.7437V19.704C64.7437 23.064 66.1117 24.48 70.8157 24V20.736C69.2317 20.832 68.3437 20.736 68.3437 19.704V15.456H70.8157ZM75.7284 14.136V12H72.1284V24H75.7284V18.576C75.7284 16.2 77.8404 15.6 79.3284 15.84V11.76C77.8164 11.76 76.2084 12.528 75.7284 14.136ZM87.8033 12V18.552C87.8033 20.256 86.8913 21.024 85.5713 21.024C84.4193 21.024 83.4833 20.328 83.4833 18.84V12H79.8833V19.368C79.8833 22.608 81.9473 24.336 84.3713 24.336C85.9553 24.336 87.1553 23.76 87.8033 22.872V24H91.4033V12H87.8033ZM106.523 11.664C104.819 11.664 103.715 12.288 103.043 13.248C102.371 12.24 101.315 11.664 99.8994 11.664C98.2914 11.664 97.2354 12.288 96.6834 13.104V12H93.0834V24H96.6834V17.232C96.6834 15.816 97.3554 14.976 98.5554 14.976C99.7074 14.976 100.283 15.744 100.283 16.944V24H103.883V17.232C103.883 15.816 104.555 14.976 105.755 14.976C106.907 14.976 107.483 15.744 107.483 16.944V24H111.083V16.632C111.083 13.632 109.283 11.664 106.523 11.664Z"
+                          fill="#393348"/>
+                    <rect y="4" width="24" height="24" rx="5.76" fill="#F22F63"/>
+                    <rect x="5.2793" y="16.48" width="6.72" height="4.8" rx="0.48" fill="white" fill-opacity="0.4"/>
+                    <rect x="8.64062" y="13.6" width="6.72" height="4.8" rx="0.48" fill="white" fill-opacity="0.6"/>
+                    <rect x="12" y="10.72" width="6.72" height="4.8" rx="0.48" fill="white"/>
                 </svg>
-
-            </div>
-            <p class="about__subtitle">
-                это удобный сервис автоматизации менеджмента,
-                в&nbsp;который входит более 10&nbsp;инструментов для
-                эффективного управления бизнесом. С&nbsp;помощью Platrum
-                вы&nbsp;можете автоматизировать процессы компании и&nbsp;избавить
-                себя от&nbsp;операционных задач.
-            </p>
-        </div>
-        <div class="about__bg"></div>
-    </section>
-    <section class="partners container">
-        <div class="partners__wrapper">
-            <h2 class="partners__title">Наши партнеры, проводящие внедрение <span>Platrum</span></h2>
-            <a href="#" class="btn partners__btn">
-                Узнать о Platrum
             </a>
+            <div class="footer__column">
+            <span class="footer__title">
+                Меню
+            </span>
+                <a href="#audience" class="footer__link">Для кого курс</a>
+                <a href="#program" class="footer__link">Что вас ждет на курсе</a>
+                <a href="#speaker" class="footer__link">Спикер курса</a>
+                <a href="#education" class="footer__link">Как проходит обучение</a>
+                <a href="#reviews" class="footer__link">Отзывы</a>
+            </div>
+            <div class="footer__column">
+                <span class="footer__title">
+                    Контакты
+                </span>
+                <a href="mailto:support@platrum.ru" class="footer__link">support@platrum.ru</a>
+                <div class="footer__social-links">
+                    <a href="" class="footer__social"><img src="./img/bootcamp/social2.png" alt="ВК"></a>
+                    <a href="" class="footer__social"><img src="./img/bootcamp/social1.png" alt="Телеграм"></a>
+                    <a href="" class="footer__social"><img src="./img/bootcamp/social3.png" alt="Ютьюб"></a>
+                </div>
+            </div>
+            <div class="footer__column">
+            <span class="footer__title">
+                Документы
+            </span>
+                <a href="" class="footer__link">Политика конфиденциальности</a>
+            </div>
         </div>
-        <ul class="partners__list">
-            <li class="partners__item">
-                <img src="./img/bootcamp/partners1.png" alt="peller media">
-            </li>
-            <li class="partners__item">
-                <img src="./img/bootcamp/partners3.png" alt="Тактик">
-            </li>
-            <li class="partners__item">
-                <img src="./img/bootcamp/partners2.png" alt="1GT-IT">
-            </li>
-            <li class="partners__item">
-                <img src="./img/bootcamp/partners4.png" alt="Progress consulting">
-            </li>
-        </ul>
-    </section>
+    </footer>
 </div>
+<script src="./js/bootcamp/swiper.js"></script>
 <script src="./js/bootcamp/index.js"></script>
 </body>
 </html>

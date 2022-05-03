@@ -6,9 +6,9 @@
 
 @media screen and (max-width: 1260px) {
   .advantages {
-    padding-right: 70px;
-    padding-left: 74px;
-    padding-bottom: 100px;
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-bottom: 147px;
     margin-bottom: 0;
   }
 }
@@ -19,13 +19,14 @@
     padding-left: 10px;
     position: relative;
     z-index: 3;
+    padding-bottom: 105px;
   }
   
   .advantages:before {
     content: '';
     position: absolute;
     right: -12px;
-    bottom: 67px;
+    bottom: 31px;
     background-size: contain;
     background-image: url(./img/bootcamp/figure.svg);
     height: 164px;
@@ -52,7 +53,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 22px;
+    row-gap: 47px;
     column-gap: 82px;
     padding: 30px 80px 30px 48px;
   }
@@ -65,8 +66,8 @@
     grid-template-columns: 1fr;
     row-gap: 32px;
     column-gap: 82px;
-    padding: 30px;
     margin-top: -40px;
+    padding: 30px 59px 61px 30px;
   }
   
   .advantages__item:nth-child(2n) {

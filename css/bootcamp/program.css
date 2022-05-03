@@ -1,17 +1,48 @@
-.program {
-
-}
 .program__title {
   font-weight: 600;
   font-size: 50px;
   line-height: 100%;
   color: #3C4758;
-  margin: 0 0 70px;
+  margin: 0 0 70px 0;
 }
+
+@media screen and (max-width: 1260px) {
+  .program__title {
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .program__title {
+    font-size: 25px;
+    line-height: 100%;
+    margin: auto auto 0;
+    text-align: center;
+  }
+}
+
 .program__tabs {
   display: flex;
   justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1260px) {
+  .program__tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% + 42px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .program__tabs {
+    display: none;
+  }
+}
+
 
 .program__tab-name {
   padding: 21px 28px;
@@ -22,31 +53,198 @@
   color: #3D3D3D;
 }
 
+@media screen and (max-width: 1260px) {
+  .program__tab-name {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+  }
+}
+
 .program__tab-name_active {
   padding: 21px 28px;
   background: linear-gradient(97.52deg, #6309BB 4.98%, #45CBD7 104.44%);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   color: #FFF;
+  visibility: initial;
 }
 
 .program__slide {
-  display: flex;
-  justify-content: space-between;
-  
-  min-height: 660px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  height: 488px;
+  opacity: 0;
+  z-index: 2;
+  width: 100%;
+  transition: opacity .3s ease, .3s visibility;
 }
-.program__slide-text {
-  margin: 292px 0 0;
+
+@media screen and (max-width: 1260px) {
+  .program__slide {
+    height: 728px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .program__slide {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.program__slider {
+  position: relative;
+  height: 488px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+  .program__slider {
+    height: 728px;
+  }
+}
+
+.program__btn {
+  margin: 100px auto auto;
+}
+
+.program .swiper-pagination {
+  position: static;
+  margin-bottom: 75px;
+}
+
+
+@media screen and (max-width: 1260px) {
+  .program__btn {
+    margin-top: 0;
+  }
+}
+
+.program__slide_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.program__slide-title {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .program__slide-title {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    margin-top: 57px;
+    margin-bottom: 38px;
+  }
+}
+
+.program__slide-list {
+  max-width: 474px;
+  margin: 193px 111px 0 auto;
+}
+
+@media screen and (max-width: 1260px) {
+  .program__slide-list {
+    margin: 0;
+    max-width: 100%;
+    width: max-content;
+    padding-left: 29px;
+  }
+}
+
+.program__slide-item {
   font-size: 20px;
   line-height: 28px;
   color: #7A7070;
-  max-width: 472px;
+  margin-bottom: 30px;
 }
+
+@media screen and (max-width: 750px) {
+  .program__slide-item {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
 .program__slide-bg {
-  align-self: end;
-  width: 520px;
-  height: 445px;
+  position: relative;
+  z-index: 2;
+  width: 485px;
+  height: 378px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.program__slide-bg-wrapper {
+  position: absolute;
+  width: fit-content;
+  top: 120px;
+  left: -8px;
+  align-self: end;
+  z-index: 2;
+}
+@media screen and (max-width: 1260px) {
+  .program__slide-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 437px;
+    height: 341px;
+  }
+  .program__slide-bg-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 62px auto 98px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .program__slide-bg {
+    width: 73vw;
+    padding-top: 0;
+    height: 53vw;
+  }
+  .program__slide-bg-wrapper {
+    margin-top: 30px;
+    margin-bottom: 44px;
+  }
+}
+
+
+.program__slide-bg-shadow {
+  position: absolute;
+  width: 232px;
+  height: 232px;
+  left: -30px;
+  bottom: -67px;
+  background: #83D7C6;
+  filter: blur(86px);
+  z-index: 1;
+}
+@media screen and (max-width: 1260px) {
+  .program__slide-bg-shadow {
+    width: 150px;
+    height: 150px;
+    bottom: -60px;
+    left: -30px;
+  }
+}
+
+
+@media screen and (max-width: 1260px) {
+  .program__slide-bg-shadow {
+    width: 100px;
+    height: 100px;
+    bottom: -5px;
+    left: -72px;
+  }
 }
