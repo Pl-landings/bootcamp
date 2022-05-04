@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 1260px) {
   .education__bg {
-    background-image: url(./img/bootcamp/education-tablet.png);
+    background-image:  url(../img/bootcamp/education-tablet.png);
     position: relative;
     top: 0;
     right: 0;
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 750px) {
   .education__bg {
-    background-image: url(./img/bootcamp/education-mobile.png);
+    background-image:  url(../img/bootcamp/education-mobile.png);
     width: calc(100% - 24px);
     margin: 30px 12px 21px;
   }
