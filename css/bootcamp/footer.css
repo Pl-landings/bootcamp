@@ -104,8 +104,11 @@
 
 .footer__social-links {
   display: flex;
-  gap: 12px;
   margin-top: 20px;
+}
+
+.footer__social {
+  margin-right: 12px;
 }
 
 
