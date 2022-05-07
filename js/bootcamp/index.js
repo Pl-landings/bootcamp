@@ -1,6 +1,6 @@
 
 (()=> {
-    if(window.innerWidth > 750) {
+    if(window.innerWidth > 750 ) {
         const swiperEl = document.querySelector('.js-swiper');
         swiperEl.classList.add('swiper');
         swiperEl.children[0].classList.add('swiper-wrapper');
@@ -10,11 +10,12 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            slidesPerView: 'auto',
+            slidesPerView: 2,
             spaceBetween: 40,
             breakpoints: {
-                1280: {
+                1260: {
                     spaceBetween: 45,
+                    slidesPerView: 3
                 }
             }
         })
