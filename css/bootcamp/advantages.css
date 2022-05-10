@@ -19,20 +19,7 @@
     padding-left: 10px;
     position: relative;
     z-index: 3;
-    padding-bottom: 105px;
-  }
-  
-  .advantages:before {
-    content: '';
-    position: absolute;
-    right: -12px;
-    bottom: 31px;
-    background-size: contain;
-    background-image:  url(../../img/bootcamp/figure.svg);
-    background-repeat: no-repeat;
-    height: 164px;
-    width: 127px;
-    z-index: 4;
+    /*padding-bottom: 105px;*/
   }
 }
 
@@ -68,7 +55,7 @@
     row-gap: 32px;
     column-gap: 82px;
     margin-top: -40px;
-    padding: 30px 59px 61px 30px;
+    padding: 30px 59px 30px 30px;
   }
   
   .advantages__item:nth-child(2n) {
